@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="uk"> <!--задаємо українську мову для сторінки lang="uk"-->
+<head>
+    <meta charset="UTF-8"> <!-- Щоб український текст і всі символи відображались правильно -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Щоб сайт добре виглядав на телефонах і планшетах -->
+    <title>BAE</title> <!--заголовок, який буде відображатися у вкладці браузера-->
+
+    <!--підключення файликів які відповідають за стиль сторінки-->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general_styles.css"> 
+
+    <!--Підключення шрифтів, із сайту google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--НАВІГАЦІЙНА ПАНЕЛЬКА-->
+        <header>
+            <nav class="navbar container">
+                <div class="align-box">
+                    <!--логотип-->
+                    <div class="navbar-logo">
+                        <img src="images/BAE.svg" alt="logo image" class="responsive-image">
+                    </div>
+
+                    <!--пункти меню-->
+                    <div class="navbar-menu hidden">
+                        <a href="#section-1" class="navbar-menu-item menu-text navbar-menu-1">Головна</a>
+                        <a href="#section-2" class="navbar-menu-item menu-text">Про нас</a>
+                        <a href="#section-5" class="navbar-menu-item menu-text">Команда</a>
+                        <a href="#section-7" class="navbar-menu-item menu-text">FAQ</a>
+                    </div>
+                </div>
+                
+                <!--іконки відкриття та закриття меню, відображатиметься лише для малих екранів-->
+                <div class="navbar-icons">
+                    <img src="images/menu_icon.svg" alt="menu" class="menu-icon">
+                    <img src="images/close_icon.svg" alt="close" class="close-icon hide">
+                </div>
+            </nav>
+            <hr>
+        </header>
+    
+        <!--ОСНОВНИЙ КОНТЕНТ САЙТУ-->
+        <main>
+
+            <!--СЕКЦІЯ 1-->
+            <div id="section-1"  class="section-1 container grid">
+                <!--слоган, підслоган та кнопка -->
+                <div class="span-6 responsive-align">
+                    <h1 class="slogan">Земля, що працює на вас!</h1>
+                    <p class="sub-slogan">Купівля земельних ділянок та їх перепродажа</p>
+                    <button id="btn-1" class="custom-button">Купити</button>
+                </div>
+                <div class="span-6 image-main">
+                    <img src="images/unsplash_i4W8OINLI_I.png" alt="image" class="responsive-image">
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 2 - ПРО НАС-->
+            <div id="section-2" class="container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-12">Ми пропорнуємо найкраще</h2>
+                </div>
+
+                <!--картки-->
+                <div class="grid section-2-cards-container">
+
+                    <!--Картка 1-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Що ми пропонуємо?</p>
+                            <p class="usual-text"><b>Оцінка вартості земель:</b> Проведення аналізу ринкової вартості ділянок для допомоги клієнтам у прийнятті рішень.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/unsplash_X7osczmnEqQ.png" alt="image" class="responsive-image">
+                        </div>
+                        
+                    </div>
+
+                    <!--Картка 2-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Що ми пропонуємо?</p>
+                            <p class="usual-text"><b>Оренда земель під різні цілі:</b> Пропозиція оренди ділянок для сільського господарства, будівництва, комерційних проектів тощо.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/unsplash_wcWN29NufMQ.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+
+                    <!--Картка 3-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Що ми пропонуємо?</p>
+                            <p class="usual-text"><b>Партнерство з забудовниками:</b> Співпраця з будівельними компаніями для продажу земель під житлові або комерційні проекти.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/unsplash_z78Lko7b3Ic.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+
+                    <!--Картка 4-->
+                    <div class="span-6 card-section-2 gaps-for-card">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Що ми пропонуємо?</p>
+                            <p class="usual-text"><b>Маркетинг земельних ділянок:</b> Розробка та реалізація маркетингових стратегій для швидкого продажу або оренди земель.</p>
+                        </div>
+                        <div class="span-1 image-about-us">
+                            <img src="images/unsplash_z7x8Lko7b3Ic.png" alt="image" class="responsive-image">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            <!--СЕКЦІЯ 3 - Цінності (Мета та місія)-->
+            <div class="section-3-wrapper">
+                <div id="section-3" class="section-gap container">
+                
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Скупити та продати всю Землю</h2>
+                    </div>
+                    
+                    <!--основний текст-->
+                    <div class="grid">
+                        <p class="usual-text span-8-start-3">Наш бізнес спеціалізується на перепродажу та оренді земельних ділянок, пропонуючи клієнтам унікальні можливості для інвестування в нерухомість. Ми надаємо професійні консультації, оцінку вартості ділянок та юридичний супровід угод, що забезпечує нашим клієнтам впевненість у кожному кроці.<br> Приєднуйтесь до нас, щоб відкрити нові горизонти у світі нерухомості!</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!--СЕКЦІЯ 4 - Факти-->
+            <div id="section-4" class="section-gap section-4-container">
+                <div class="container">
+
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Досягнення, факти, цифри</h2>
+                    </div>
+
+                    <!--картки-->
+                    <div class="grid responsive-grid-large">
+                        <!--карткка 1-->
+                        <div class="span-4">
+                            <p class="card-tittle-section-4 accent-text">4 дня</p>
+                            <p class="card-content-section-4 usual-text">Всього для купівлі</p>
+                        </div>
+                        <!--картка 2-->
+                        <div class="span-4">
+                            <p class="card-tittle-section-4 accent-text">3M</p>
+                            <p class="card-content-section-4 usual-text">Людям ми допомогли</p>
+                        </div>
+                        <!--картка 3-->
+                        <div class="span-4">
+                            <p class="card-tittle-section-4 accent-text">100%</p>
+                            <p class="card-content-section-4 usual-text">Безпечної гарантії</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 5 - Команда-->
+            <div id="section-5" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">Наша команда</h2>
+                </div>
+
+                <!--картки учасників команди-->
+                <div class="grid">
+
+                    <!--Картка 1-->
+                    <div class="card-section-5 span-6-start-1">
+                        <div class="extra-section-grid">
+                            <img src="images/unsplash_yMSecCHsIBc.png" alt="image" class="fit-image span-6-extra">
+                            <div class="member-box span-6-extra">
+                                <p class="label-text name-box">Євген Аврамчук</p>
+                                <ul class="usual-text position-box">
+                                    <li>Більше 7 років досвіду в сфері нерухомості, з акцентом на перепродаж земельних ділянок.</li>
+                                    <li>Успішне завершення понад 150 угод з купівлі-продажу та оренди земель.</li>
+                                    <li>Глибоке розуміння ринку та законодавства, що регулює земельні відносини.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!--Картка 2-->
+                    <div class="card-section-5 span-6-start-7">
+                        <div class="extra-section-grid">
+                            <div class="member-box span-6-extra">
+                                <p class="label-text name-box">Тимофій Влялько</p>
+                                <ul class="usual-text position-box">
+                                    <li>Понад 5 років досвіду в сфері нерухомості, зокрема в перепродажу земельних ділянок.</li>
+                                    <li>Успішне завершення понад 100 угод з купівлі-продажу земель.</li>
+                                    <li>Глибоке знання ринку земельних ділянок та тенденцій в Україні.</li>
+                                </ul>
+                            </div>
+                            <img src="images/unsplash_IDbeTFgI9As.png" alt="image" class="fit-image span-6-extra">
+                        </div>
+                     
+                    </div>
+  
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 6 - Зв'зок (залишити за'явку ітд.)-->
+            <div id="section-6" class="section-6 section-gap">
+                <!--заголовок, текст-->
+                <div class="grid container">
+                    <h2 class="tittle span-8-start-3">🚀 Хочете стати успішним земельним інвестором? <br> Не гайте час – спробуйте наші послуги вже сьогодні! ✨</h2>
+                </div>
+                <!--кнопка-->
+                <div class="btn-align container">
+                    <button id="btn-2" class="custom-button">Тикай сюди</button>
+                </div>   
+            </div>
+            
+            <!--СЕКЦІЯ 7 - FAQ-->
+            <div id="section-7" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">FAQ Відповіді на поширені питання</h2>
+                </div>
+
+                <!--Блоки питання-відповіді-->
+               <div class="faq-section grid">
+
+                    <!--блок 1-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Для кого наш стартап?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Він підійде для, тих хто хоче самим крутим інвестором </p>
+                    </details>
+
+                    <!--блок 2-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Скільки часу треба для купівлі землі?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Всього лиш 4 Дня</p>
+                    </details>
+
+                    <!--блок 3-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Де знаходимося?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="стрілка">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">На вулиці Виниченка 21Б в Києві</p>
+                    </details>
+
+                </div>
+            </div>
+
+        </main>
+        
+        <!--ФУТЕР ІЗ КОНТАКТНОЮ ІНФОЮ-->
+        <footer class="section-gap">
+            <div class="container">
+                <p class="usual-text gap-20px"><span class="usual-text-bold">tel:</span>+380 (096) XXX XX XX</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">e-mail:</span>bae.company@gmail.com</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">location:</span>Kyiv, Ukraine</p>
+            </div>
+            <div class="small-text container center-footer">
+                Buy All Earth. All rights reserved ©
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<!--додаємо скрипт-->
+<script src="main.js"></script>
+
+</html>
