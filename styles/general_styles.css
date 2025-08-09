@@ -238,7 +238,7 @@ body, html{
 @media (max-width: 1020px) { 
     .navbar-menu{
         z-index: 1;
-        background-color: var(--color-light);
+        background-color: var(--color-y);
         position: absolute;
         top: 7vh;
         width: 100%;
